@@ -59,7 +59,8 @@ class LinkPreview {
 
 			if ( ! is_wp_error( $response ) ) {
 				$this->document = new \DOMDocument();
-				$this->document->loadHTML( wp_remote_retrieve_body( $response ) );
+				// Silence errors caused by invalid markup.
+				@$this->document->loadHTML( wp_remote_retrieve_body( $response ) );
 				$metaTags = $this->document->getElementsByTagName( 'meta' );
 				foreach ( $metaTags as $metaTag ) {
 					/* @var \DOMElement $metaTag */
