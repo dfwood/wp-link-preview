@@ -1,0 +1,22 @@
+{
+  "name": "dfwood/wp-link-preview",
+  "description": "A library to assist in fetching a remote webpage and reading page data, specifically for the creation of previews.",
+  "license": "GPL-3.0+",
+  "type": "library",
+  "homepage": "https://github.com/dfwood/wp-link-preview",
+  "authors": [
+    {
+      "name": "David Wood",
+      "email": "david@davidwood.ninja",
+      "homepage": "https://davidwood.ninja/"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/dfwood/wp-link-preview"
+  },
+  "autoload": {
+    "psr-4": {
+      "dfwood\\WordPress\\": ""
+    }
+  }
+}
